@@ -25,6 +25,7 @@ def gcd(a, b):
         c = a % b
         a = b
         b = c
+
     return a
 
 def modexp(base, exp, modulus):
