@@ -174,11 +174,11 @@ def test():
     keys = generate_keys()
     priv = keys['privateKey']
     pub = keys['publicKey']
-    message = "encryption"
+    message = input("Please input a string > ")
     cipher = encrypt(pub, message)
     print("Cypher Text:", cipher)
     plain = decrypt(priv, cipher)
-    print("Plain Text:", plain)
+    print("Decripted Text:", plain)
 
     return message == plain
 
